@@ -484,7 +484,7 @@ export const globalStyles: string = `
   }
 
   /* ── CONTACT ── */
-  #contact { background: var(--bg); }
+  #contact { background: linear-gradient(180deg, var(--bg2) 0%, #0a1628 100%); }
   .contact-wrap { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; }
   .contact-info p { color: var(--muted); line-height: 1.75; margin-bottom: 2.5rem; font-size: .95rem; }
   .contact-item { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem; }
@@ -535,9 +535,7 @@ export const globalStyles: string = `
   /* ── FOOTER ── */
   /* ── SOCIAL BAND ── */
   #social-band {
-    background: var(--bg2);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+    background: var(--bg);
     padding: 3rem 4rem;
     display: flex; align-items: center; justify-content: space-between;
     gap: 2rem;
@@ -610,4 +608,5 @@ export const globalStyles: string = `
     .hero-buttons { flex-direction: column; align-items: center; }
     .pricing-grid { grid-template-columns: 1fr; }
   }
+
 `;
