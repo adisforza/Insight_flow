@@ -8,9 +8,9 @@ export const navbar = (activePage: string = "/"): string => {
   <nav>
     <a href="/" class="nav-logo">Insight<span>Flow</span></a>
     <ul class="nav-links">
-      ${link("#features", "Services")}
-      ${link("#workflow", "Process")}
-      ${link("#pricing", "Pricing")}
+      ${link("/#features", "Services")}
+      ${link("/#workflow", "Process")}
+      ${link("/#pricing", "Pricing")}
       ${link("/portfolio", "Portfolio")}
       ${link("/about", "About")}
     </ul>
@@ -32,4 +32,5 @@ export const navbar = (activePage: string = "/"): string => {
     <a href="/#contact" onclick="closeDrawer()">Get Started</a>
   </div>
 `;
+
 };
