@@ -433,7 +433,8 @@ const ctaSection = (): string => `
     <div class="about-cta-inner">
       <h2>Ready to grow with <span>InsightFlow?</span></h2>
       <p>
-        THIS ISS JUST FOR PUSH TEST.
+        Whether you're just starting or ready to scale, we'd love to learn
+        about your business and see how we can help.
       </p>
       <div class="about-cta-btns">
         <a href="/#contact" class="btn-primary">Start a Conversation</a>
