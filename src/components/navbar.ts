@@ -6,7 +6,14 @@ export const navbar = (activePage: string = "/"): string => {
 
   return `
   <nav>
-    <a href="/" class="nav-logo">Insight<span>Flow</span></a>
+    <a href="/" class="nav-logo">
+    <img 
+    src="/Logo.png" 
+    alt="InsightFlow Logo" 
+    class="nav-logo-img"
+    onerror="this.style.display = 'none'" />
+    Insight<span>Flow</span></a>
+</a>
     <ul class="nav-links">
       ${link("/#features", "Services")}
       ${link("/#workflow", "Process")}
@@ -34,3 +41,4 @@ export const navbar = (activePage: string = "/"): string => {
 `;
 
 };
+
