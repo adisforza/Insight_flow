@@ -61,4 +61,5 @@ export const valuesData: Value[] = [
   { icon: "🤝", title: "Honest Partner",  desc: "We tell you what the data says — even when it's not what you hoped to hear." },
   { icon: "⚡", title: "Bias to Action",  desc: "Insights without action are just trivia. We focus on what moves the needle." },
   { icon: "🌱", title: "Long-term Growth", desc: "We're not here for quick wins. We build sustainable strategies that compound." },
+
 ];
