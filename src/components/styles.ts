@@ -24,71 +24,7 @@ export const globalStyles: string = `
     cursor: none;
   }
 
-  /* ═══════════════════════════════════════
-     CUSTOM CURSOR
-  ═══════════════════════════════════════ */
-  #cursor-dot {
-    position: fixed;
-    width: 8px; height: 8px;
-    background: var(--accent);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: width .15s, height .15s, background .15s, opacity .15s;
-    box-shadow: 0 0 10px rgba(248,123,27,.8), 0 0 20px rgba(248,123,27,.4);
-  }
-  #cursor-ring {
-    position: fixed;
-    width: 36px; height: 36px;
-    border: 1.5px solid rgba(248,123,27,.6);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%, -50%);
-    transition: width .35s cubic-bezier(.25,.46,.45,.94),
-                height .35s cubic-bezier(.25,.46,.45,.94),
-                border-color .35s, opacity .35s;
-  }
-  #cursor-trail {
-    position: fixed;
-    pointer-events: none;
-    z-index: 9997;
-    top: 0; left: 0;
-  }
-  .cursor-trail-dot {
-    position: absolute;
-    width: 4px; height: 4px;
-    border-radius: 50%;
-    background: var(--accent);
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
 
-  /* cursor states on hover */
-  body.cursor-hover #cursor-dot {
-    width: 12px; height: 12px;
-    background: var(--green);
-    box-shadow: 0 0 16px rgba(203,217,155,.8);
-  }
-  body.cursor-hover #cursor-ring {
-    width: 56px; height: 56px;
-    border-color: rgba(203,217,155,.5);
-  }
-  body.cursor-hover #cursor-ring::after {
-    content: '';
-    position: absolute; inset: 6px;
-    border-radius: 50%;
-    border: 1px solid rgba(248,123,27,.2);
-  }
-  body.cursor-click #cursor-dot {
-    width: 6px; height: 6px;
-  }
-  body.cursor-click #cursor-ring {
-    width: 28px; height: 28px;
-    border-color: var(--accent);
-    border-width: 2px;
-  }
 
   /* ═══════════════════════════════════════
      NOISE + SCANLINES
