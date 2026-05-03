@@ -1,16 +1,7 @@
-import { Elysia, t } from "elysia";
+import { Elysia } from "elysia";
 import { homePage } from "./pages/home";
 import { aboutPage } from "./pages/about";
 import { portfolioPage } from "./pages/portfolio";
-
-// ── Types ──
-interface ContactBody {
-  name: string;
-  business: string;
-  email: string;
-  category?: string;
-  message: string;
-}
 
 // ── HTML response helper ──
 const html = (content: string): Response =>
@@ -29,25 +20,6 @@ const app = new Elysia()
 
   // Portfolio page
   .get("/portfolio", () => html(portfolioPage()))
-
-  // Contact form API endpoint
-  .post(
-    "/api/contact",
-    async ({ body }: { body: ContactBody }) => {
-      // TODO: save to database + send email notification
-      console.log("📨 New contact submission:", body);
-      return { success: true, message: "Message received!" };
-    },
-    {
-      body: t.Object({
-        name:     t.String({ minLength: 1 }),
-        business: t.String({ minLength: 1 }),
-        email:    t.String({ format: "email" }),
-        category: t.Optional(t.String()),
-        message:  t.String({ minLength: 1 }),
-      }),
-    }
-  )
 
   // Global 404 handler
   .onError(({ code, error }) => {
@@ -87,3 +59,5 @@ const app = new Elysia()
   .listen(3000);
 
 console.log(`🦊 InsightFlow running at http://localhost:${app.server?.port}`);
+
+export default app;
