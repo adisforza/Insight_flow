@@ -21,7 +21,6 @@ export const globalStyles: string = `
     font-family: 'Syne', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
-    cursor: none;
   }
 
 
