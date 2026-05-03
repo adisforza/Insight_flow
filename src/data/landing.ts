@@ -138,6 +138,6 @@ export const footerData: FooterLink[] = [
 ];
 
 export const socialData: SocialLink[] = [
-  { platform: "instagram", href: "https://instagram.com/insightflow.id", handle: "@insightflow.id" },
-  { platform: "tiktok",    href: "https://tiktok.com/@insightflow.id",   handle: "@insightflow.id" },
+  { platform: "instagram", href: "https://www.instagram.com/insightflowlab/", handle: "@insightflowlab" },
+  { platform: "tiktok",    href: "https://www.tiktok.com/@insightflowlab/",   handle: "@insightflowlab" },
 ];
